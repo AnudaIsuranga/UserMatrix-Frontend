@@ -1,0 +1,96 @@
+/* General Header Styles */
+.text-bg-primary {
+  background-color: #007bff !important; /* Soft blue background for the header */
+}
+
+.nav-link {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #fff;
+  transition: color 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+  color: #f0ad4e; /* Golden hover effect */
+}
+
+.navbar-brand {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+/* Search Bar */
+.form-control-dark {
+  background-color: #343a40;
+  border: 1px solid #6c757d;
+  color: white;
+}
+
+.form-control-dark:focus {
+  background-color: #495057;
+  border-color: #007bff;
+}
+
+/* Button Styles */
+.btn {
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 12px 25px;
+  border-radius: 25px;
+  transition: all 0.3s;
+}
+
+.btn-outline-light {
+  color: #fff;
+  border: 2px solid #fff;
+}
+
+.btn-outline-light:hover {
+  background-color: #fff;
+  color: #007bff;
+}
+
+.btn-light {
+  background-color: #f8f9fa;
+  color: #007bff;
+  border: 2px solid #007bff;
+}
+
+.btn-light:hover {
+  background-color: #e9ecef;
+  color: #007bff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+  }
+
+  .nav-link {
+    padding: 10px 0;
+  }
+
+  .text-end {
+    margin-top: 1rem;
+  }
+}
+
+/* Navbar Logo */
+.fas {
+  font-size: 20px;
+  margin-right: 5px;
+}
+
+.fs-4 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+/* Icon Styling */
+.fas {
+  margin-left: 5px;
+}
