@@ -1,37 +1,107 @@
-<header class="p-3 text-bg-primary">
-  <div class="container">
-    <div class="d-flex flex-wrap align-items-center justify-content-between">
-      <!-- Logo -->
-      <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
-        <svg class="bi me-2" width="40" height="32" role="img" aria-label="Logo">
-          <use xlink:href="#logo"></use> <!-- Add your logo SVG or icon here -->
-        </svg>
-        <span class="fs-4">Aperture</span>
+<header style="padding: 18px 24px; background: linear-gradient(90deg, #1a237e, #3949ab); color: white; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+  <div style="max-width: 1200px; margin: 0 auto; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px;">
+    
+    <!-- Logo -->
+    <a routerLink="/" style="display: flex; align-items: center; text-decoration: none; color: white; margin-bottom: 8px;">
+      <svg width="40" height="32" role="img" aria-label="Logo" style="margin-right: 10px; fill: white;">
+        <!-- Replace this with your actual SVG logo -->
+        <circle cx="20" cy="16" r="14" stroke="white" stroke-width="2" fill="none"></circle>
+        <text x="20" y="21" text-anchor="middle" font-size="16" fill="white" font-family="Arial">A</text>
+      </svg>
+      <span style="font-size: 1.5rem; font-weight: 700;">UserMatrix</span>
+    </a>
+    
+    <!-- Navigation Links -->
+    <nav style="display: flex; gap: 20px; flex-wrap: wrap; justify-content: center; flex-grow: 1; min-width: 300px;">
+      <a routerLink="" style="color: white; text-decoration: none; padding: 8px 12px; font-weight: 600; border-radius: 6px; transition: background-color 0.3s;" 
+         onmouseover="this.style.backgroundColor='rgba(255,255,255,0.15)'" onmouseout="this.style.backgroundColor='transparent'">
+        Home
       </a>
-
-      <!-- Navigation Links -->
-      <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-        <li><a href="#" routerLink="" class="nav-link px-3 text-white">Home</a></li>
-        <li><a href="#" routerLink="add-user" class="nav-link px-3 text-white">Add User</a></li>
-        <li><a href="#" routerLink="manage-user" class="nav-link px-3 text-white">Manage User</a></li>
-        <li><a href="#" class="nav-link px-3 text-white">FAQs</a></li>
-        <li><a href="#" class="nav-link px-3 text-white">About</a></li>
-      </ul>
-
-      <!-- Search Bar -->
-      <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
-        <input type="search" class="form-control form-control-dark text-bg-primary" placeholder="Search..." aria-label="Search">
-      </form>
-
-      <!-- Authentication Buttons -->
-      <div class="text-end">
-        <button type="button" class="btn btn-outline-light me-2">
-          <i class="fas fa-sign-in-alt"></i> Login
-        </button>
-        <button type="button" class="btn btn-light">
-          <i class="fas fa-user-plus"></i> Sign-up
-        </button>
-      </div>
+      <a routerLink="add-user" style="color: white; text-decoration: none; padding: 8px 12px; font-weight: 600; border-radius: 6px; transition: background-color 0.3s;" 
+         onmouseover="this.style.backgroundColor='rgba(255,255,255,0.15)'" onmouseout="this.style.backgroundColor='transparent'">
+        Add User
+      </a>
+      <a routerLink="manage-user" style="color: white; text-decoration: none; padding: 8px 12px; font-weight: 600; border-radius: 6px; transition: background-color 0.3s;" 
+         onmouseover="this.style.backgroundColor='rgba(255,255,255,0.15)'" onmouseout="this.style.backgroundColor='transparent'">
+        Manage User
+      </a>
+      <a routerLink="faqs" style="color: white; text-decoration: none; padding: 8px 12px; font-weight: 600; border-radius: 6px; transition: background-color 0.3s;" 
+         onmouseover="this.style.backgroundColor='rgba(255,255,255,0.15)'" onmouseout="this.style.backgroundColor='transparent'">
+        FAQs
+      </a>
+      <a routerLink="about-us" style="color: white; text-decoration: none; padding: 8px 12px; font-weight: 600; border-radius: 6px; transition: background-color 0.3s;" 
+         onmouseover="this.style.backgroundColor='rgba(255,255,255,0.15)'" onmouseout="this.style.backgroundColor='transparent'">
+        About
+      </a>
+    </nav>
+    
+    <!-- Search Bar -->
+    <form role="search" style="flex-shrink: 0; margin: 8px 16px 8px 0;">
+      <input type="search" placeholder="Search..." aria-label="Search"
+        style="
+          padding: 8px 14px; 
+          border-radius: 25px; 
+          border: none; 
+          outline: none; 
+          width: 180px; 
+          max-width: 100%; 
+          font-size: 1rem; 
+          color: #1a237e;
+          box-shadow: 0 0 6px rgba(57, 73, 171, 0.3);
+        "
+      >
+    </form>
+    
+    <!-- Authentication Buttons -->
+    <div style="display: flex; gap: 14px; align-items: center; flex-shrink: 0; margin-top: 8px;">
+      <button type="button" style="
+        background: transparent; 
+        border: 2px solid white; 
+        color: white; 
+        font-weight: 600; 
+        padding: 8px 20px; 
+        border-radius: 30px; 
+        cursor: pointer; 
+        transition: background-color 0.3s, color 0.3s;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        font-size: 1rem;
+      "
+      onmouseover="this.style.backgroundColor='white'; this.style.color='#1a237e';"
+      onmouseout="this.style.backgroundColor='transparent'; this.style.color='white';"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" height="18" width="18" viewBox="0 0 16 16">
+          <path d="M6 2a1 1 0 0 0-1 1v1h1V3h5v10H6v-1H5v1a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1H6z"/>
+          <path d="M4 6v4H3V6h1z"/>
+        </svg>
+        Login
+      </button>
+      
+      <button type="button" style="
+        background: white; 
+        border: none; 
+        color: #1a237e; 
+        font-weight: 600; 
+        padding: 8px 22px; 
+        border-radius: 30px; 
+        cursor: pointer; 
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        font-size: 1rem;
+        box-shadow: 0 3px 8px rgba(26, 35, 126, 0.3);
+        transition: background-color 0.3s;
+      "
+      onmouseover="this.style.backgroundColor='#e3e7ff';"
+      onmouseout="this.style.backgroundColor='white';"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" height="18" width="18" viewBox="0 0 16 16">
+          <path d="M8 7a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+          <path d="M8 1a7 7 0 1 0 0 14A7 7 0 0 0 8 1zM4 8a4 4 0 0 1 8 0 4 4 0 0 1-8 0z"/>
+        </svg>
+        Sign-up
+      </button>
     </div>
   </div>
 </header>
