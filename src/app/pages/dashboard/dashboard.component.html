@@ -1,36 +1,112 @@
-<div class="hero-section text-center p-5 bg-primary text-white">
-  <div class="container">
-    <h1 class="display-3 fw-bold">Engineered for Innovation</h1>
-    <h3 class="fw-normal text-light mb-4">Build Anything You Want with Aperture</h3>
-    <div class="d-flex gap-3 justify-content-center">
-      <a class="btn btn-light text-primary" href="#">
-        Learn More
-        <svg class="bi ms-2" width="20" height="20"><use xlink:href="#chevron-right"/></svg>
+<!-- Hero Section -->
+<div style="background: linear-gradient(135deg, #1a237e, #3949ab); color: white; text-align: center; padding: 70px 20px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+  <div style="max-width: 900px; margin: 0 auto;">
+    <h1 style="font-size: 3.8rem; font-weight: 900; margin-bottom: 15px; text-shadow: 3px 3px 10px rgba(0,0,0,0.5);">
+      Simplify User Management
+    </h1>
+    <h3 style="font-weight: 400; color: #c5cae9; margin-bottom: 35px; letter-spacing: 1.3px;">
+      Securely manage users, roles, and permissions with ease
+    </h3>
+    <div style="display: inline-flex; gap: 24px; justify-content: center;">
+      <a href="#" 
+         style="
+           background-color: #f0f4ff; 
+           color: #1a237e; 
+           font-weight: 700; 
+           padding: 16px 34px; 
+           border-radius: 40px; 
+           text-decoration: none; 
+           display: inline-flex; 
+           align-items: center; 
+           box-shadow: 0 6px 18px rgba(26, 35, 126, 0.5);
+           transition: background-color 0.3s, color 0.3s;
+         "
+         onmouseover="this.style.backgroundColor='#3949ab'; this.style.color='white';"
+         onmouseout="this.style.backgroundColor='#f0f4ff'; this.style.color='#1a237e';"
+      >
+        Get Started
+        <svg style="margin-left: 12px;" width="22" height="22" fill="#1a237e" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M6 12l4-4-4-4v8z"/>
+        </svg>
       </a>
-      <a class="btn btn-outline-light text-white" href="#">
-        Buy Now
-        <svg class="bi ms-2" width="20" height="20"><use xlink:href="#chevron-right"/></svg>
+      <a href="#" 
+         style="
+           border: 3px solid white; 
+           color: white; 
+           font-weight: 700; 
+           padding: 16px 34px; 
+           border-radius: 40px; 
+           text-decoration: none; 
+           display: inline-flex; 
+           align-items: center;
+           box-shadow: 0 6px 18px rgba(255, 255, 255, 0.4);
+           transition: background-color 0.3s, color 0.3s;
+         "
+         onmouseover="this.style.backgroundColor='white'; this.style.color='#283593';"
+         onmouseout="this.style.backgroundColor='transparent'; this.style.color='white';"
+      >
+        Contact Sales
+        <svg style="margin-left: 12px;" width="22" height="22" fill="white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M6 12l4-4-4-4v8z"/>
+        </svg>
       </a>
     </div>
   </div>
 </div>
 
-<div class="features-section container my-5">
-  <div class="row text-center g-4">
-    <div class="col-md-4">
-      <h2 class="display-5 text-dark">Creativity Meets Technology</h2>
-      <p class="lead text-muted">Innovative design for developers and engineers.</p>
-      <div class="bg-primary shadow-sm mx-auto" style="height: 200px; border-radius: 15px;"></div>
+<!-- Features Section -->
+<div style="max-width: 1100px; margin: 60px auto; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; padding: 0 15px;">
+  <div style="display: flex; gap: 30px; flex-wrap: wrap; justify-content: center; text-align: center;">
+    
+    <div style="flex: 1 1 320px; max-width: 350px; background: #f5f7ff; border-radius: 20px; padding: 35px 25px; box-shadow: 0 10px 25px rgba(57, 73, 171, 0.15); transition: transform 0.3s ease;">
+      <h2 style="font-size: 2rem; color: #283593; margin-bottom: 16px;">User Profiles</h2>
+      <p style="color: #555; font-size: 1.15rem; margin-bottom: 25px;">
+        Create and customize detailed user profiles with avatars, contact info, and activity logs.
+      </p>
+      <div style="height: 220px; border-radius: 20px; background: linear-gradient(135deg, #3949ab, #1a237e); box-shadow: 0 10px 20px rgba(57, 73, 171, 0.6);"></div>
     </div>
-    <div class="col-md-4">
-      <h2 class="display-5 text-dark">Unlock New Possibilities</h2>
-      <p class="lead text-muted">Explore endless features and capabilities.</p>
-      <div class="bg-info shadow-sm mx-auto" style="height: 200px; border-radius: 15px;"></div>
+    
+    <div style="flex: 1 1 320px; max-width: 350px; background: #e0f2f1; border-radius: 20px; padding: 35px 25px; box-shadow: 0 10px 25px rgba(21, 101, 87, 0.15); transition: transform 0.3s ease;">
+      <h2 style="font-size: 2rem; color: #00695c; margin-bottom: 16px;">Role Management</h2>
+      <p style="color: #444; font-size: 1.15rem; margin-bottom: 25px;">
+        Define roles, assign permissions, and control access levels across your organization.
+      </p>
+      <div style="height: 220px; border-radius: 20px; background: linear-gradient(135deg, #26a69a, #00796b); box-shadow: 0 10px 20px rgba(38, 166, 154, 0.6);"></div>
     </div>
-    <div class="col-md-4">
-      <h2 class="display-5 text-dark">Your Path to Success</h2>
-      <p class="lead text-muted">Seamless integration and easy-to-use tools.</p>
-      <div class="bg-success shadow-sm mx-auto" style="height: 200px; border-radius: 15px;"></div>
+    
+    <div style="flex: 1 1 320px; max-width: 350px; background: #fff3e0; border-radius: 20px; padding: 35px 25px; box-shadow: 0 10px 25px rgba(245, 124, 0, 0.15); transition: transform 0.3s ease;">
+      <h2 style="font-size: 2rem; color: #ef6c00; margin-bottom: 16px;">Activity Analytics</h2>
+      <p style="color: #555; font-size: 1.15rem; margin-bottom: 25px;">
+        Gain insights from user activities with real-time charts and reports.
+      </p>
+      <div style="height: 220px; border-radius: 20px; background: linear-gradient(135deg, #ffa726, #fb8c00); box-shadow: 0 10px 20px rgba(255, 167, 38, 0.6);"></div>
     </div>
+    
+  </div>
+</div>
+
+<!-- Extra Section: Security & Support -->
+<div style="max-width: 1100px; margin: 0 auto 80px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; padding: 0 15px;">
+  <div style="background: #e8eaf6; border-radius: 25px; padding: 45px 30px; box-shadow: 0 12px 30px rgba(63, 81, 181, 0.1); text-align: center;">
+    <h2 style="font-size: 2.4rem; color: #303f9f; margin-bottom: 18px;">Enterprise-Grade Security</h2>
+    <p style="font-size: 1.2rem; color: #555; max-width: 720px; margin: 0 auto 30px;">
+      Keep your user data safe with advanced encryption, multi-factor authentication, and audit trails.
+    </p>
+    <a href="#" style="
+      background-color: #303f9f; 
+      color: white; 
+      font-weight: 700; 
+      padding: 14px 42px; 
+      border-radius: 50px; 
+      text-decoration: none; 
+      box-shadow: 0 8px 20px rgba(48, 63, 159, 0.6);
+      transition: background-color 0.3s;
+      display: inline-block;
+    "
+      onmouseover="this.style.backgroundColor='#1a237e';"
+      onmouseout="this.style.backgroundColor='#303f9f';"
+    >
+      Learn About Security
+    </a>
   </div>
 </div>
